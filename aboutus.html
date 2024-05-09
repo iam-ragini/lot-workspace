@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f0f0;
+    }
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; 
+    }
+
+    
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    header {
+      background-color: #242222;
+      color: orangered;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: orangered;
+    }
+    p {
+      line-height: 1.6;
+      color: rgb(248, 244, 244);
+    }
+    .team-member {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .team-member-card {
+      width: calc(25.25% - 15px); 
+      height: 270px;
+      margin-bottom: 40px; 
+      background-color: #1a1818;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    @media (max-width: 992px) {
+      .team-member-card {
+        width: calc(50% - 20px); 
+      }
+    }
+    @media (max-width: 600px) {
+      .team-member-card {
+        width: calc(100% - 20px); 
+      }
+    }
+    .team-member-card img {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+      border-radius: 10%; 
+    }
+    .team-member-info {
+      padding: 0px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-overlay">
+    <video autoplay muted loop>
+      <source src="image/animated 2.mp4" type="video/mp4">
+     
+    </video>
+  </div>
+
+  <header>
+    <h1>About Us</h1>
+  </header>
+  <div class="container">
+    <div class="section">
+      <h2>Leaders of Today</h2>
+      <p>
+        At Lovely Professional University (LPU), we have a variety of student organizations dedicated to fostering both an enriching and enjoyable campus environment. One such organization, Leaders of Today, operates on the principle of being created by students and for students.
+
+<br>Our vision is to empower students to become the leaders of today, equipped with the skills and mindset to make a meaningful impact on society. With this vision, we aim to create a community that offers students a nurturing space beyond academics, where they can explore their passions, gain real-world experience, and develop the resilience necessary to overcome challenges.
+
+<br>At the core of Leaders of Today is our inclusive and diverse community, comprised of individuals from various backgrounds and disciplines. From marketing strategists to creative graphic designers and dedicated volunteers, every individual plays a crucial role in our organization's success. Together, we work tirelessly to turn our collective dreams into reality, striving to create impactful and successful events that leave a lasting impression on our campus community.
+
+<br>It's this spirit of collaboration and dedication that sets us apart. Regardless of our roles or backgrounds, we all share a common goal to empower our fellow students, inspire change, and create a positive impact on society. In Leaders of Today, every member's contribution is valued and respected, driving us forward towards our shared vision of leadership and excellence.
+      </p>
+    </div>
+    <div class="section">
+      <h2>Our Team</h2>
+      
+      <div class="team-member">
+        <div class="team-member-card">
+          <img src="image/surya ceo.jpg" alt="Team Member 1">
+          <div class="team-member-info">
+            <p><b>Surya Prakash</b></p>
+            <p>CEO</p>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <img src="image/2.jpg" alt="Team Member 2">
+          <div class="team-member-info">
+            <p><b>Satyajeet Gaur</b></p>
+            <p>Chief Technical Officer</p>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <img src="image/shubham.jpg" alt="Team Member 3">
+          <div class="team-member-info">
+            <p><b>Shubham Sharma</b></p>
+            <p>Head of Event Management</p>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <img src="image/Kashish.jpg" alt="Team Member 4">
+          <div class="team-member-info">
+            <p><b>Kashish</b></p>
+            <p>Chief operating Officer</p>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <img src="image/1.jpg" alt="Team Member 4">
+          <div class="team-member-info">
+            <p><b>Rahul Paswan</b></p>
+            <p> Head of Operation Team</p>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <img src="image/atul.jpg" alt="Team Member 4">
+          <div class="team-member-info">
+            <p><b>Atul Singh</b></p>
+            <p>HR Head</p>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <img src="image/MIKsha HR.jpg" alt="Team Member 4">
+          <div class="team-member-info">
+            <p><b>Miksha</b></p>
+            <p>HR</p>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <img src="image/Priya HEad of PR.jpg" alt="Team Member 4">
+          <div class="team-member-info">
+            <p><b>Priya</b></p>
+            <p>Head of PR</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p>Email: contact.lotlpu@gmail.com</p>
+      <p>Phone: +91 8448134406</p>
+    </div>
+  </div>
+</body>
+</html>

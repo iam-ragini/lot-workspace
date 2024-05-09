@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+    }
+    .video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(121, 89, 89, 0.7); 
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: orangered;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #eee7e7;
+    }
+    input[type="text"],
+    input[type="phone"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 22px); 
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #0f0e0e;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 150px;
+    }
+    input[type="submit"] {
+        background-color: orangered;
+        color: rgb(10, 9, 9);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+       
+    }
+    input[type="submit"]:hover {
+        background-color: orangered;
+    }
+</style>
+</head>
+<body>
+
+<video autoplay loop muted class="video-background">
+  <source src="image/animated 2.mp4" type="video/mp4"> 
+</video>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone no:</label>
+        <input type="phone" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

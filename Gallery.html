@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0ecec;
+        }
+        .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; 
+    }
+
+    
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+        .container {
+            max-width: 1200px;
+            margin: 10px auto;
+            padding: 0 10px;
+        }
+        h1 {
+            text-align: center;
+            color: orangered;
+            font-weight: bolder;
+        }
+        .container p {
+            text-align: center;
+            color: orangered;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            aspect-ratio: 3/2;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 40px;
+            object-fit: cover;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 5px;
+            height: 400px;
+            display: flex;
+        }
+        .gallery-item img{
+            height: 400px;
+            width: 400px;
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-overlay">
+        <video autoplay muted loop>
+          <source src="image/animated 2.mp4" type="video/mp4">
+         
+        </video>
+      </div>
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>Glimpses from our past events</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Image/20.jpg" alt="Image 20">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/ragini6.jpg" alt="Image 2" height="500px">
+                </div>
+            <div class="gallery-item">
+                <img src="Image/19.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/ragini4.jpg" alt="Image 19">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/3.jpg" alt="Image 18">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/4.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/5.jpg" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/6.jpg" alt="Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/7.jpg" alt="Image 7">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/8.jpg" alt="Image 8">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/9.jpg" alt="Image 9">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/10.jpg" alt="Image 10">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/11.jpg" alt="Image 11">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/12.jpg" alt="Image 12">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/13.jpg" alt="Image 13">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/14.jpg" alt="Image 14">
+            </div>
+            <div class="gallery-item">
+                <img src="Image/15.jpg" alt="Image 15">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
